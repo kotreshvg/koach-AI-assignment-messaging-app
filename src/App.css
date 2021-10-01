@@ -1,38 +1,70 @@
-.App {
+.App{
+  width:100%;
+  max-width: 300px;
+  height: fit-content;
+  background-color: rgba(56, 233, 56, 0.973);
+  margin:0 auto;
+  display: grid;
+}
+.App>h5{
+  font-size: large;
+  font-family: cursive;
   text-align: center;
+  margin: 20px auto 20px auto;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+  padding:30px 0;
+  height: fit-content;
+  border-radius: 5px;
+  border: 1px solid snow;
+  box-shadow:1px 1px 5px rgb(18, 95, 18),-1px -1px 5px rgb(18, 95, 18) ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper>div{
+  width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+input{
+  width: 90%;
+  margin: 20px auto 10px auto;
+  padding: 0;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  border: thin solid green;
+}
+textarea{
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  border: thin solid green;
+  margin: 0 auto;
+  padding: 0;
+}
+button{
+  margin: 20px auto;
+  padding: 0;
+  width: 140px;
+  height: 30px;
+  border-radius: 5px;
+  border: thin solid snow;
+  color:#143409;
+  background-color: #99eeae;
+}
+.message{
+  width: 60%;
+  height: fit-content;
   color: white;
+  border-radius: 5px;
+  border: thin solid snow;
+  margin: 5px 0 5px 5px;
+  background-color: #095a04;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message>h6 , .message>p{
+  margin: 10px 0;
+  padding: 0 5px;
 }
